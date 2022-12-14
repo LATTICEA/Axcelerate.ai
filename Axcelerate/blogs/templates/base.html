@@ -1,0 +1,298 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from demo.bootstrapious.com/directory/1-6-1/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 17 Apr 2021 09:21:30 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AxcelerateAI</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <script src="/media/js/main.js"> </script>
+
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-223462146-1"></script>
+            <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+    
+            gtag('config', 'UA-223462146-1');
+            </script>
+    
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>AxcelerateAI</title>
+        <meta name="description" content="We provide services in a wide variety of different domains. The past decade has seen several 
+                                                breakthroughs in artificial intelligence, primarily in the form of deep learning.
+                                                At AxcelerateAI our mission is to empower businesses with the latest state-of-the-art 
+                                                AI technologies.">
+            <meta name="keywords" content="AccelerateAI,  Accelerate, AI, NLP, CV, Computer Vision, Natural Language Processing, Technology, 
+                                            Tech, Machine Learning, ML">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <!-- favicon -->		
+        <link rel="shortcut icon" type="image/x-icon" href="img/logo/fav.png">
+    
+        <!-- all css here -->
+    
+        <!-- bootstrap v3.3.6 css -->
+        <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+        <!-- owl.carousel css -->
+        <link rel="stylesheet" href="/static/css/owl.carousel.css">
+        <link rel="stylesheet" href="/static/css/owl.transitions.css">
+           <!-- Animate css -->
+            <link rel="stylesheet" href="/static/css/animate.css">
+            <!-- meanmenu css -->
+            <link rel="stylesheet" href="/static/css/meanmenu.min.css">
+        <!-- font-awesome css -->
+        <link rel="stylesheet" href="/static/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/static/css/themify-icons.css">
+        <link rel="stylesheet" href="/static/css/flaticon.css">
+        <!-- venobox css -->
+        <link rel="stylesheet" href="/static/css/venobox.css">
+        <!-- magnific css -->
+            <link rel="stylesheet" href="/static/css/magnific.min.css">
+        <!-- style css -->
+        <link rel="stylesheet" href="/static/style.css">
+        <!-- responsive css -->
+        <link rel="stylesheet" href="/static/css/responsive.css">
+    
+        <!-- modernizr css -->
+        <script src="/static/js/vendor/modernizr-2.8.3.min.js"></script>
+
+
+   </head>
+  <body>
+    <input type="hidden" id="csrf" value="{{csrf_token}}">
+    <header class="header-two">
+        <!-- header-area start -->
+        <div id="sticker" class="header-area header-area-2 header-area-3 hidden-xs">
+            <div class="container">
+                <div class="row">
+                    <!-- logo start -->
+                    <div class="col-md-2 col-sm-3">
+                        <div class="logo">
+                            <!-- Brand -->
+                            <a class="navbar-brand white-logo " href="{% url 'index' %}">
+                                <img src="/static/img/logo/A_logo_white.png" style="padding-top: 12px;" width="38px" alt="">
+                                <p style="color: #fff;font-size: 20px;margin-bottom: 0px; 
+                                            margin-top: 16px;margin-left: 4px; font-weight: 700; ">
+                                    AxcelerateAI
+                                </p>
+                            </a>
+                            <a class="navbar-brand black-logo" href="{% url 'index' %}">
+                                <img src="/static/img/logo/A_logo_blue.png" style="padding-top: 12px;" width="38px" alt="">
+                                <p style="color: #252525;font-size: 20px;margin-bottom: 0px; 
+                                            margin-top: 16px;margin-left: 4px; font-weight: 700; ">
+                                    AxcelerateAI
+                                </p>
+                            </a>
+                        </div>
+                        <!-- logo end -->
+                    </div>
+                    <div class="col-md-10 col-sm-9">
+                        <div class="header-right-link">
+                            <!-- search option end -->
+                            <a class="s-menu" href="{% url 'contact_view' %}">Get an Estimate</a>
+                        </div>
+                        <!-- mainmenu start -->
+                        <nav class="navbar navbar-default">
+                            <div class="collapse navbar-collapse" id="navbar-example">
+                                <div class="main-menu">
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li><a class="pagess" href="{% url 'index' %}">Home</a>
+                                        </li>
+                                        <li><a class="pagess" href="{% url 'index' %}#services">Services</a>
+                                        </li>
+                                        <li><a class="pagess" href="{% url 'index' %}#products">Products</a>
+                                        </li>
+                                        <li><a class="pagess" href="{% url 'index' %}#casestudies">Case Studies</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="{% url 'airlift' %}">Airlift - NLP</a></li>
+                                                <li><a href="{% url 'wildearth' %}">WildEarth - CV</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="{% url 'contact_view' %}">contact</a></li>
+                                        <li><a href="{% url 'home' %}">blogs</a></li>
+                                        <li><a href="{% url 'career' %}">Career</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                        <!-- mainmenu end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header-area end -->
+        <!-- mobile-menu-area start -->
+        <div class="mobile-menu-area hidden-lg hidden-md hidden-sm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="mobile-menu">
+                            <div class="logo">
+                                <a href="index.html" style="display: flex;">
+                                    <img src="/static/img/logo/A_logo_blue.png" class="sm-logo-img" width="38px" alt="">
+                                    <p class="sm-logo">
+                                        AxcelerateAI
+                                    </p>
+                                </a>
+                            </div>
+                            <nav id="dropdown">
+                                <ul>
+                                    <li><a class="pagess" href="{% url 'index' %}">Home</a>
+                                    </li>
+                                    <li><a class="pagess" href="#services">Services</a>
+                                    </li>
+                                    <li><a class="pagess" href="#products" >Products</a>
+                                    </li>
+                                    <li><a class="pagess" href="#casestudies" >Case Studies</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="{% url 'airlift' %}">Airlift - NLP</a></li>
+                                            <li><a href="{% url 'wildearth' %}">WildEarth - CV</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="{% url 'contact_view' %}">contacts</a></li>
+                                    <li><a href="{% url 'home' %}">blogs</a></li>
+                                    <li><a href="{% url 'career' %}">Career</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- mobile-menu-area end -->
+        <!-- Navbar Collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            
+            <ul class="navbar-nav ml-auto">
+              
+              {% if request.user.is_authenticated %}
+              <li class="nav-item mt-3 mt-lg-0 ml-lg-3 d-lg-none d-xl-inline-block">
+                <a class="s-menu" href="{% url 'add_blog' %}">Add Blogs</a>
+              </li>
+              <li class="nav-item mt-3 mt-lg-0 ml-lg-3 d-lg-none d-xl-inline-block">
+                <a class="s-menu" href="{% url 'add_job' %}">Add Job</a>
+              </li>
+              <li class="nav-item mt-3 mt-lg-0 ml-lg-3 d-lg-none d-xl-inline-block">
+                <a class="s-menu-2" href="{% url 'logout_view' %}">Logout</a>
+              </li>
+
+              {% else %}
+              <li class="nav-item mt-3 mt-lg-0 ml-lg-3 d-lg-none d-xl-inline-block">
+                <a class="" href="{% url 'login_view' %}"></a>
+              </li>
+
+              {% endif %}
+
+            </ul>
+          </div>
+    </header>
+    <!-- header end -->
+   
+
+    {% block start %}
+
+
+    {% endblock %}
+
+
+   <!-- Start Footer bottom Area -->
+   <footer class="footer2">
+    <div class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-sm-5 col-xs-12">
+                    <div class="footer-content logo-footer">
+                        <div class="footer-head">
+                            <div class="footer-logo">
+                                <a href="index.html" style="display: flex;">
+                                    <img src="/static/img/logo/A_logo_white.png" style="padding-top: 12px;" width="38px" alt="">
+                                    <p style="color: #fff;font-size: 20px;margin-bottom: 0px; 
+                                                margin-top: 16px;margin-left: 4px; font-weight: 700; ">
+                                        AxcelerateAI
+                                    </p>
+                                </a>
+                            </div>
+                            <p >
+                                We help organizations harness the growing benefits of artificial 
+                                intelligence by developing data-driven, cost-efficient solutions. 
+                                Our solutions can directly be integrated into existing 
+                                workflows including web and mobile applications.
+                                Subscribe below to receive free updates directly in your inbox.
+                                
+                            </p>
+                            <div class="subs-feilds">
+                                <div class="suscribe-input" style="width: 100%;">
+                                    <form action="" id="subscription_form">
+                                        <input type="email" class="email form-control width-80" id="sus_email" name="sus_email" placeholder="Type Email">
+                                        <button  id="sus_submit" class="add-btn">Subscribe</button>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end single footer -->
+                <div class="col-md-4 col-sm-3 col-xs-12">
+
+                </div>
+                <!-- end single footer -->
+                <div class="col-md-3 col-sm-4 col-xs-12">
+                    <div class="footer-content last-content">
+                        <div class="footer-head">
+                            <h4>Contact Us</h4> 
+                            <div class="footer-contacts">
+                              <a href="tel:+923244683506"><p><span>Tel :</span> +92-324-4683506</p></a>
+            <a href="mailto:hello@axcelerate.ai">
+            <p><span>Email :</span> hello@axcelerate.ai</p>
+                              </a>
+            <p><span>Location : </span> 29-M Civic Center, Block M Commercial Area, Model Town, Lahore, Pakistan</p>
+          </div> 
+                            <div class="footer-icons">
+                                <ul>
+                                    <li>
+                                        <a href="https://www.linkedin.com/company/axcelerateai/">
+                                            <i class="fa fa-linkedin"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/axcelerateai/">
+                                            <i class="fa fa-github"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-area-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="copyright">
+                        <p>
+                            Copyright © 2022
+                            <a href="#">AxcelerateAI</a> All Rights Reserved
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+   
+    
+  </body>
+
+
+</html>

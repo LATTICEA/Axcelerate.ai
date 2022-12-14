@@ -1,0 +1,295 @@
+{% extends "base.html" %}
+
+{% block start %}
+
+        <!-- Start Bottom Header -->
+        <div class="page-area">
+            <div class="breadcumb-overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="breadcrumb text-center">
+                            <div class="section-headline white-headline text-center">
+                                <h3> Case study: Extracting Structured Data from Unstructured Text</h3>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END Header -->
+        <!-- Start project Area -->
+        <div class="project-single area-padding">
+            <div class="container">
+                <div class="row">
+                    
+                    <!-- End Column -->
+                    <div class="col-md-8 col-sm-6 col-xs-12">
+                        <div class="project-details">
+
+							<h4> The Problem </h4>
+							<p>
+                                Hundreds of email requests for private aircrafts are sent out every day. 
+                                Airlift - a U.S.-based company - wanted to connect people who had private aircrafts available along a 
+                                specific route with people who wanted to travel on that route. For this, 
+                                they required an interface that allowed email requests to be searchable by 
+                                arrival and departure airports, dates & times, and aircraft types.
+                                </p>
+							<!-- <ul class="marker-list">
+								<li>Words is roughly being maintained</li>
+								<li>Letters or begins with a capital letter</li>
+								<li>Previous casing is maintained</li>
+								<li>Maintains the amount of lines</li>
+							</ul> -->
+                            
+                            <h4>How We Solved It</h4>
+                            <p>
+                                Since different people put in requests in different formats/writing styles, 
+                                using a traditional rule-based parser was not a viable option. 
+                                So, we instead opted for a machine learning-based approach. 
+                                Our deep learning-based solution automatically extracts desirable information 
+                                (departure, arrival airports etc.) from different requests and displays them in a 
+                                terse searchable format. One major challenge was that a single request could 
+                                include multiple routes (e.g., the person wants to go from airport A to B on 
+                                a specific date, and then from B to C on some other date). To solve this, our 
+                                solution follows a two-stage strategy. In the first stage, it extracts the 
+                                different airports, dates and times present in the request. In the next stage, 
+                                it identifies which arrival airports, dates and times link to which departure 
+                                airports. Our final deliverable was a web-based interface which receives requests in 
+                                real-time, processes them using our machine learning model and displays them.
+                            </p>
+                            
+                            <h4>Impact</h4>
+                            <p>With our solution, people are able to save tens of hours each week that they spent 
+                                manually going through all requests to find the best one.
+                            </p>
+                        </div>
+					</div>
+                    <!-- End Column -->
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="project-history">
+                            <div class="project-name">
+                                <ul>
+                                    <li><span>Client :</span> Airlift</li>
+                                    <li><span style="padding-right:0px;">Category :</span> Natural Language Processing</li>
+                                    <li><span>Status :</span> Completed</li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="new-project">
+                            <div class="project-new">
+                                <h4>Interested in a similar project?</h4>
+                                <a class="hire-btn" href="{% url 'contact_view' %}">Contact us</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image slides -->
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="row">
+                            <div class="">
+                                <!-- single-awesome-project start -->
+                                <div class="col-md-4 col-sm-4 col-xs-12">
+                                    <!-- single-awesome-project start -->
+                                    <div class="single-awesome-project">
+                                        <div class="awesome-img">
+                                            <a href="#" style="padding-bottom: 60px;padding-top: 40px;">
+                                                <img src="/static/img/project/airlift5.webp" alt="" />
+                                            </a>
+                                            <div class="add-actions text-center">
+                                                <a  class="venobox" 
+                                                titleposition="bottom"
+                                                title="The interface allows users to 
+                                                search through emails much
+                                               more efficiently by specifying desired departure and arrival airports and dates. 
+                                               The interface also allows users to sort email requests 
+                                               according to how close the departure airport is to their aircrafts 
+                                               (tail numbers)." 
+                                                 data-gall="myGallery" href="/static/img/project/airlift5.webp">
+                                                    <i class="port-icon ti-zoom-in"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="project-dec">
+                                            <a href="/case2.html" target="_blank">
+                                           
+                                        </a>
+                                            <p >
+                                                The interface allows users to 
+                                                 search through emails much
+                                                more efficiently by specifying desired departure and arrival airports and dates. 
+                                                The interface also allows users to sort email requests 
+                                                according to how close the departure airport is to their aircrafts 
+                                                (tail numbers).
+                                                </p>
+                                        </div>
+                                    </div>
+                                    <!-- single-awesome-project end -->
+                                </div>
+                               
+                                <div class="col-md-4 col-sm-4 col-xs-12">
+                                    <!-- single-awesome-project start -->
+                                    <div class="single-awesome-project">
+                                        <div class="awesome-img">
+                                            <a href="#">
+                                                <img src="/static/img/project/airlift2.webp" alt="" />
+                                            </a>
+                                            <div class="add-actions text-center">
+                                                <a class="venobox" data-gall="myGallery" 
+                                                titlePosition="bottom"
+                                                title="Raw email text. Different people have different 
+                                                writing styles so using a traditional 
+                                                rule-based parser was not a viable option."
+                                                href="/static/img/project/airlift2.webp">
+                                                    <i class="port-icon ti-zoom-in"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="project-dec">
+                                            <a href="/case2.html" target="_blank">
+                                           
+                                        </a>
+                                            <p>
+                                                Raw email text. Different people have different 
+                                                writing styles so using a traditional 
+                                                rule-based parser was not a viable option.
+                                                
+                                                </p>
+                                        </div>
+                                    </div>
+                                    <!-- single-awesome-project end -->
+                                </div>
+                                
+                                <div class="col-md-4 col-sm-4 col-xs-12">
+                                    <div class="single-awesome-project">
+                                        <div class="awesome-img">
+                                            <a href="#">
+                                                <img src="/static/img/project/aairllift1.webp" alt="" />
+                                            </a>
+                                            <div class="add-actions text-center">
+                                                <a class="venobox"
+                                               
+                                                title="Structured data extracted by the 
+                                                AI system. The requested route is also displayed on a 
+                                                map for convenience."
+                                                data-gall="myGallery" href="/static/img/project/aairllift1.webp"  titlePosition="top">
+                                                    <i class="port-icon ti-zoom-in"></i>
+                                                    
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="project-dec">
+                                            <p>
+                                                 Structured data extracted by the 
+                                                AI system. The requested route is also displayed on a 
+                                                map for convenience.
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>		
+                        </div>	
+                    </div>
+					<!-- End single page -->
+                </div>
+            </div>
+            <!-- End main content -->
+        </div>
+		<!-- End portfolio Area -->
+
+		<!-- all js here -->
+
+		<!-- jquery latest version -->
+		<script src="/static/js/vendor/jquery-1.12.4.min.js"></script>
+		<!-- bootstrap js -->
+		<script src="/static/js/bootstrap.min.js"></script>
+		<!-- owl.carousel js -->
+		<script src="/static/js/owl.carousel.min.js"></script>
+		<!-- venobox js -->
+        <script src="/static/js/venobox.min.js"></script>
+		<!-- magnific js -->
+        <script src="/static/js/magnific.min.js"></script>
+        <!-- wow js -->
+        <script src="/static/js/wow.min.js"></script>
+        <!-- meanmenu js -->
+        <script src="/static/js/jquery.meanmenu.js"></script>
+		<!-- Form validator js -->
+		<script src="/static/js/form-validator.min.js"></script>
+		<!-- plugins js -->
+		<script src="/static/js/plugins.js"></script>
+		<!-- main js -->
+		<script src="/static/js/main.js"></script>
+
+        <!-- Subscribe script -->
+        <script>
+
+            //update this with your js_form selector
+            var sus_form_id_js = "subscription_form";
+            var sus_sendButton = document.getElementById("sus_submit");
+            var sus_data_js = {
+                "access_token": "hix9f5cwqbnv0dk79rnz0r1o" // sent after you sign up
+            };
+        
+            function subscribe_success() {
+                sus_sendButton.innerHTML="Subscribed"
+                document.getElementById("sus_email").value=''
+                document.getElementById("sus_email").innerHTML=''
+            }
+        
+            function subscribe_error(error) {
+                alert("Failed to subscribe")
+            }
+
+            function sus_send() {
+                sus_sendButton.innerHTML='Sending…';
+                sus_sendButton.disabled=true;
+                var request = new XMLHttpRequest();
+                request.onreadystatechange = function() {
+                    if (request.readyState == 4 && request.status == 200) {
+                        subscribe_success();
+                    } else
+                    if(request.readyState == 4) {
+                        subscribe_error(request.response);
+                    }
+                };
+
+                var email = document.querySelector("#" + sus_form_id_js + " [name='sus_email']").value;
+                if (email == ''){
+                    alert('Plase enter email')
+                }
+                else{
+                    sus_data_js['subject'] = 'Subscribed by: ' + email;
+                    sus_data_js['text'] =  'From: '  + email;
+                    var params = sus_toParams(sus_data_js);
+            
+                    request.open("POST", "https://postmail.invotes.com/send", true);
+                    request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            
+                    request.send(params);
+                    
+                }
+                return false;
+            }
+        
+            sus_sendButton.onclick = sus_send;
+        
+            function sus_toParams(sus_data_js) {
+                var form_data = [];
+                for ( var key in sus_data_js ) {
+                    form_data.push(encodeURIComponent(key) + "=" + encodeURIComponent(sus_data_js[key]));
+                }
+        
+                return form_data.join("&");
+            }
+        
+            var sus_form_id = document.getElementById(sus_form_id_js);
+            sus_form_id.addEventListener("submit", function (e) {
+                e.preventDefault();
+            });
+        </script>
+
+    
+        {% endblock %}

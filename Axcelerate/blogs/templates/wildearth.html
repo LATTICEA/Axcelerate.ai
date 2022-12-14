@@ -1,0 +1,359 @@
+{% extends "base.html" %}
+
+{% block start %}
+
+        <!-- Start Bottom Header -->
+        <div class="page-area">
+            <div class="breadcumb-overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="breadcrumb text-center">
+                            <div class="section-headline white-headline text-center">
+                                <h3>WildEarth - Animal Detection and Facial Recognition</h3>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END Header -->
+        <!-- Start project Area -->
+        <div class="project-single area-padding">
+            <div class="container">
+                <div class="row">
+                   
+                     <!-- End Column -->
+                    <div class="col-md-8 col-sm-6 col-xs-12">
+                        <div class="project-details">
+							<h4> The Problem </h4>
+							<p>
+                                <a href="https://wildearth.tv/">WildEarth</a> is a British-South African broadcasting and conservation company that 
+                                connects people with wildlife. One of the ways in which they do this is by streaming 
+                                live safaris. WildEarth was interested in developing an animal registry database 
+                                consisting of all individual animals that appear in their safaris. However, 
+                                manually doing this would have required a constant effort of hundreds of hours and 
+                                would not be scalable as the number of animals in the database increases.
+                                </p>
+
+                            
+                            <h4>How We Solved It</h4>
+                            <p>
+                                 We built an AI-based computer vision system that is able to process live safari 
+                                 feeds in real time. The AI system automatically detects each animal that appears and compares
+                                 it with all other animals in the registry database. If the animal is not found then it 
+                                 creates a new entry for it. Otherwise, it simply updates its location based on where the 
+                                 live feed is being streamed from. Knowing the last known location of different animals 
+                                 can really aid in wildlife conservation activities. Furthermore, the system also takes 
+                                 several 300x300 snapshots of each animal that appears and then saves the best one. 
+                                 The best snapshot is the one in which the animal is clearly visible. This is determined by 
+                                 first identifying different facial landmarks - e.g., eyes, nose, ears and horns - in each 
+                                 snapshot and then ranking them based on the total number of landmarks detected.
+                            </p>
+                            
+                            <h4>Impact</h4>
+                            <p>Our AI system was able to automatically create the entire animal registry database, 
+                                thus saving thousands of manual hours that would have been spent otherwise. Keeping 
+                                track of all animals also aids in conservation activities.
+                            </p>
+                        </div>
+					</div>
+                    <!-- End Column -->
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="project-history">
+                            <div class="project-name">
+                                <ul>
+                                    <li><span>Client :</span> <a href="https://wildearth.tv/">WildEarth</a></li>
+                                    <li><span style="padding-right:0px;">Category :</span> Computer Vision</li>
+                                    <li><span>Status :</span> Completed</li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="new-project">
+                            <div class="project-new">
+                                <h4>Interested in a similar project?</h4>
+                                <a class="hire-btn" href="{% url 'contact_view' %}">Contact us</a>
+                            </div>
+                        </div>
+                    </div>
+                   
+                     <!-- Image slides -->
+                     <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="row">
+                            <div class="project-carousel">
+                                <!-- single-awesome-project start -->
+
+                                <div class="col-md-4 col-sm-4 col-xs-12">
+                                    <!-- single-awesome-project start -->
+                                    <div class="single-awesome-project">
+                                        <div class="awesome-img">
+                                            <a href="#">
+                                                <img src="/static/img/project/w1.webp" alt="" />
+                                            </a>
+                                            <div class="add-actions text-center">
+                                                <a class="venobox" data-gall="myGallery" 
+                                                titlePosition="bottom"
+                                                title="Animals detected by the AI system in real-time."
+                                                href="/static/img/project/w1.webp">
+                                                    <i class="port-icon ti-zoom-in"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="project-dec">
+                                            <a  target="_blank">
+                                           
+                                        </a>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <!-- single-awesome-project end -->
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-12">
+                                    <!-- single-awesome-project start -->
+                                    <div class="single-awesome-project">
+                                        <div class="awesome-img">
+                                            <a href="#">
+                                                <img src="/static/img/project/w2.webp" alt="" />
+                                            </a>
+                                            <div class="add-actions text-center">
+                                                <a class="venobox" data-gall="myGallery" 
+                                                titlePosition="bottom"
+                                                title="Animals detected by the AI system in real-time."
+                                                href="/static/img/project/w2.webp">
+                                                    <i class="port-icon ti-zoom-in"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="project-dec">
+                                            <a  target="_blank">
+                                           
+                                        </a>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <!-- single-awesome-project end -->
+                                </div>
+                                
+                                <div class="col-md-4 col-sm-4 col-xs-12">
+                                    <div class="single-awesome-project">
+                                        <div class="awesome-img">
+                                            <a href="#">
+                                                <img src="/static/img/project/w3.webp" alt="" />
+                                            </a>
+                                            <div class="add-actions text-center">
+                                                <a class="venobox"
+                                               
+                                                title="Animals detected by the AI system in real-time."
+                                                data-gall="myGallery" href="/static/img/project/w3.webp"  titlePosition="top">
+                                                    <i class="port-icon ti-zoom-in"></i>
+                                                    
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="project-dec">
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-4 col-xs-12">
+                                    <!-- single-awesome-project start -->
+                                    <div class="single-awesome-project">
+                                        <div class="awesome-img">
+                                            <a href="#" >
+                                                <img src="/static/img/project/w4.webp" alt="" />
+                                            </a>
+                                            <div class="add-actions text-center">
+                                                <a  class="venobox" 
+                                                titleposition="bottom"
+                                                title="Animals detected by the AI system in real-time." 
+                                                 data-gall="myGallery" href="/static/img/project/w4.webp">
+                                                    <i class="port-icon ti-zoom-in"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="project-dec">
+                                            <a  target="_blank">
+                                           
+                                        </a>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <!-- single-awesome-project end -->
+                                </div>
+                               
+                                <div class="col-md-4 col-sm-4 col-xs-12">
+                                    <!-- single-awesome-project start -->
+                                    <div class="single-awesome-project">
+                                        <div class="awesome-img">
+                                            <a href="#">
+                                                <img src="/static/img/project/w5.webp" alt="" />
+                                            </a>
+                                            <div class="add-actions text-center">
+                                                <a class="venobox" data-gall="myGallery" 
+                                                titlePosition="bottom"
+                                                title="Animals detected by the AI system in real-time."
+                                                href="/static/img/project/w5.webp">
+                                                    <i class="port-icon ti-zoom-in"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="project-dec">
+                                            <a  target="_blank">
+                                           
+                                        </a>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <!-- single-awesome-project end -->
+                                </div>
+                                
+                                <div class="col-md-4 col-sm-4 col-xs-12">
+                                    <div class="single-awesome-project">
+                                        <div class="awesome-img">
+                                            <a href="#">
+                                                <img src="/static/img/project/w6.webp" alt="" />
+                                            </a>
+                                            <div class="add-actions text-center">
+                                                <a class="venobox"
+                                               
+                                                title="Animals detected by the AI system in real-time."
+                                                data-gall="myGallery" href="/static/img/project/w6.webp"  titlePosition="top">
+                                                    <i class="port-icon ti-zoom-in"></i>
+                                                    
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="project-dec">
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-4 col-xs-12">
+                                    <div class="single-awesome-project">
+                                        <div class="awesome-img">
+                                            <a href="#">
+                                                <img src="/static/img/project/w7.webp" alt="" />
+                                            </a>
+                                            <div class="add-actions text-center">
+                                                <a class="venobox"
+                                               
+                                                title="Animals detected by the AI system in real-time."
+                                                data-gall="myGallery" href="/static/img/project/w7.webp"  titlePosition="top">
+                                                    <i class="port-icon ti-zoom-in"></i>
+                                                    
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="project-dec">
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>		
+                        </div>	
+                    </div>
+					<!-- End single page -->
+                </div>
+            </div>
+            <!-- End main content -->
+        </div>
+		<!-- End portfolio Area -->
+
+		
+		<!-- all js here -->
+
+		<!-- jquery latest version -->
+		<script src="/static/js/vendor/jquery-1.12.4.min.js"></script>
+		<!-- bootstrap js -->
+		<script src="/static/js/bootstrap.min.js"></script>
+		<!-- owl.carousel js -->
+		<script src="/static/js/owl.carousel.min.js"></script>
+		<!-- venobox js -->
+        <script src="/static/js/venobox.min.js"></script>
+		<!-- magnific js -->
+        <script src="/static/js/magnific.min.js"></script>
+        <!-- wow js -->
+        <script src="/static/js/wow.min.js"></script>
+        <!-- meanmenu js -->
+        <script src="/static/js/jquery.meanmenu.js"></script>
+		<!-- Form validator js -->
+		<script src="js/form-validator.min.js"></script>
+		<!-- plugins js -->
+		<script src="/static/js/plugins.js"></script>
+		<!-- main js -->
+		<script src="/static/js/main.js"></script>
+
+        <!-- Subscribe script -->
+        <script>
+
+            //update this with your js_form selector
+            var sus_form_id_js = "subscription_form";
+            var sus_sendButton = document.getElementById("sus_submit");
+            var sus_data_js = {
+                "access_token": "hix9f5cwqbnv0dk79rnz0r1o" // sent after you sign up
+            };
+        
+            function subscribe_success() {
+                sus_sendButton.innerHTML="Subscribed"
+                document.getElementById("sus_email").value=''
+                document.getElementById("sus_email").innerHTML=''
+            }
+        
+            function subscribe_error(error) {
+                alert("Failed to subscribe")
+            }
+
+            function sus_send() {
+                sus_sendButton.innerHTML='Sending…';
+                sus_sendButton.disabled=true;
+                var request = new XMLHttpRequest();
+                request.onreadystatechange = function() {
+                    if (request.readyState == 4 && request.status == 200) {
+                        subscribe_success();
+                    } else
+                    if(request.readyState == 4) {
+                        subscribe_error(request.response);
+                    }
+                };
+
+                var email = document.querySelector("#" + sus_form_id_js + " [name='sus_email']").value;
+                if (email == ''){
+                    alert('Plase enter email')
+                }
+                else{
+                    sus_data_js['subject'] = 'Subscribed by: ' + email;
+                    sus_data_js['text'] =  'From: '  + email;
+                    var params = sus_toParams(sus_data_js);
+            
+                    request.open("POST", "https://postmail.invotes.com/send", true);
+                    request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            
+                    request.send(params);
+                    
+                }
+                return false;
+            }
+        
+            sus_sendButton.onclick = sus_send;
+        
+            function sus_toParams(sus_data_js) {
+                var form_data = [];
+                for ( var key in sus_data_js ) {
+                    form_data.push(encodeURIComponent(key) + "=" + encodeURIComponent(sus_data_js[key]));
+                }
+        
+                return form_data.join("&");
+            }
+        
+            var sus_form_id = document.getElementById(sus_form_id_js);
+            sus_form_id.addEventListener("submit", function (e) {
+                e.preventDefault();
+            });
+        </script>
+
+
+        {% endblock %}

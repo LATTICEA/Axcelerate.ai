@@ -1,0 +1,149 @@
+{% extends "base.html" %}
+
+{% block start %}
+
+<!-- Start Bottom Header -->
+<section>
+    <div class="page-area">
+      <div class="breadcumb-overlay"></div>
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                  <div class="breadcrumb text-center">
+                      <div class="section-headline white-headline text-center">
+                          <h3>Add BLog</h3>
+                      </div>
+                      <ul>
+                          <li class="home-bread">Home</li>
+                          <li>Add BLog</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    </section>
+    <!-- END Header -->
+
+
+<div class="container mt-5" style="margin-top:50px; height:700px">
+
+    <a href="{% url 'see_blog' %}" class="btn btn-warning">View Your blogs</a>
+
+    <form method="post" class="mt-5 pt-5 mb-5 pb-5"
+          enctype="multipart/form-data" action="{% url 'add_blog' %}">
+        {% csrf_token %}
+        <div class="row">
+            
+
+            <div class="col-md-12" style="margin-top:50px">
+                {{form.media}}
+                {{form.as_p}}
+            </div>
+
+            <div class="col-md-12">
+                <input type="file" name="image" class="form-control" >
+            </div>
+
+        </div>
+
+        <button type="submit" class="btn btn-primary mt-4">Create Blog</button>
+
+    </form>
+
+</div>
+
+<!-- all js here -->
+
+		<!-- jquery latest version -->
+		<script src="/static/js/vendor/jquery-1.12.4.min.js"></script>
+		<!-- bootstrap js -->
+		<script src="/static/js/bootstrap.min.js"></script>
+		<!-- owl.carousel js -->
+		<script src="/static/js/owl.carousel.min.js"></script>
+		<!-- venobox js -->
+        <script src="/static/js/venobox.min.js"></script>
+		<!-- magnific js -->
+        <script src="/static/js/magnific.min.js"></script>
+        <!-- wow js -->
+        <script src="/static/js/wow.min.js"></script>
+        <!-- meanmenu js -->
+        <script src="/static/js/jquery.meanmenu.js"></script>
+		<!-- Form validator js -->
+		<script src="/static/js/form-validator.min.js"></script>
+		<!-- plugins js -->
+		<script src="/static/js/plugins.js"></script>
+		<!-- main js -->
+		<script src="/static/js/main.js"></script>
+
+        <!-- Subscribe script -->
+        <script>
+
+            //update this with your js_form selector
+            var sus_form_id_js = "subscription_form";
+            var sus_sendButton = document.getElementById("sus_submit");
+            //Gmail
+            var sus_data_js = {
+                "access_token": "hix9f5cwqbnv0dk79rnz0r1o" // sent after you sign up
+            };
+        
+            function subscribe_success() {
+                sus_sendButton.innerHTML="Subscribed"
+                document.getElementById("sus_email").value=''
+                document.getElementById("sus_email").innerHTML=''
+            }
+        
+            function subscribe_error(error) {
+                alert("Failed to subscribe")
+            }
+
+            function sus_send() {
+                sus_sendButton.value='Sending…';
+                sus_sendButton.disabled=true;
+                var request = new XMLHttpRequest();
+                request.onreadystatechange = function() {
+                    if (request.readyState == 4 && request.status == 200) {
+                        subscribe_success();
+                    } else
+                    if(request.readyState == 4) {
+                        subscribe_error(request.response);
+                    }
+                };
+
+                var email = document.querySelector("#" + sus_form_id_js + " [name='sus_email']").value;
+                if (email == ''){
+                    alert('Plase enter email')
+                }
+                else{
+                    sus_data_js['subject'] = 'Subscribed by: ' + email;
+                    sus_data_js['text'] =  'From: '  + email;
+                    var params = sus_toParams(sus_data_js);
+            
+                    request.open("POST", "https://postmail.invotes.com/send", true);
+                    request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            
+                    request.send(params);
+                    
+                }
+                return false;
+            }
+        
+            sus_sendButton.onclick = sus_send;
+        
+            function sus_toParams(sus_data_js) {
+                var form_data = [];
+                for ( var key in sus_data_js ) {
+                    form_data.push(encodeURIComponent(key) + "=" + encodeURIComponent(sus_data_js[key]));
+                }
+        
+                return form_data.join("&");
+            }
+        
+            var sus_form_id = document.getElementById(sus_form_id_js);
+            sus_form_id.addEventListener("submit", function (e) {
+                e.preventDefault();
+            });
+        </script>
+
+
+{% endblock %}
