@@ -3,7 +3,7 @@
 {% block start %}
 <!-- Start Bottom Header -->
 <section>
-<div class="page-area">
+<div class="page-area-career">
   <div class="breadcumb-overlay"></div>
   <div class="container">
       <div class="row">
@@ -24,8 +24,8 @@
 </section>
 <!-- END Header -->
 
-   <section style="height:500px">
-    <div class="container" style="margin-top:50px">
+   <section style="padding-top:100px; padding-bottom:100px">
+    <div class="container" >
         <div class="row">
             {% for job in jobs %}
             
@@ -33,7 +33,7 @@
                     <div class="card">
                       <div class="card-header" id="heading{{ job.id }}">
                         <h5 class="mb-0">
-                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse{{ job.id }}" aria-expanded="false" aria-controls="collapseOne">
+                          <button class="btn-link" type="button" data-toggle="collapse" data-target="#collapse{{ job.id }}" aria-expanded="false" aria-controls="collapseOne">
                             {{ job.title }}
                           </button>
                         </h5>

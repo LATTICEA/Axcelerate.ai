@@ -6,6 +6,7 @@ from .models import *
 class BlogForm(forms.ModelForm):
     class Meta:
         model = BlogModel
+        content = forms.CharField(widget=FroalaEditor)
         fields = ['title', 'content']
 
 class JobForm(forms.ModelForm):

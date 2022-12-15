@@ -26,7 +26,8 @@ def wildearth(request):
 
 def home(request):
     blogs_list = BlogModel.objects.all()
-    p = Paginator(blogs_list, 6)
+
+    p = Paginator(blogs_list, 3)
 
     print(p.num_pages)
 
@@ -113,6 +114,10 @@ def blog_update(request, slug):
             image = request.FILES['image']
             title = request.POST.get('title')
             user = request.user
+
+            blog_obj = BlogModel.objects.get(slug=slug)       
+            blog_obj.delete()
+
 
             if form.is_valid():
                 content = form.cleaned_data['content']
